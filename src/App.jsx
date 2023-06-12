@@ -26,7 +26,7 @@ function App() { //1. creamos el useState y useEffect
 //Cleanup cuando el componente se desmonta y cuando cambian las dependencias, antes de ejecutar 
   return () => {
     console.log("cleanup")
-      window.removeEventListener("pointermove", handleMove) //para limpiar la suscripción anterior
+    window.removeEventListener("pointermove", handleMove) //para limpiar la suscripción anterior
  }
  //si pusiera en la consola getEvenListeners(window) me aparecería cuántas veces me suscribo al evento (truco). Usarlo para ver si se limpia bien el evento. Solo en Chromium
 
